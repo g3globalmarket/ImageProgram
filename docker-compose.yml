@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: korean-products-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: products
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: korean-products-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+    name: korean-products-mongo-data
+  redis-data:
+    name: korean-products-redis-data
+

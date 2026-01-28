@@ -1,0 +1,36 @@
+.staged-products-list {
+  width: 100%;
+}
+
+.staged-products-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Reuse product list styles */
+.staged-products-list .products-grid,
+.staged-products-list .product-card,
+.staged-products-list .product-thumbnail,
+.staged-products-list .product-title,
+.staged-products-list .product-price,
+.staged-products-list .product-meta,
+.staged-products-list .pagination {
+  /* Inherit from ProductList.css */
+}
+

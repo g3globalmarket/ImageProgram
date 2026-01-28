@@ -1,0 +1,420 @@
+.product-detail {
+  width: 100%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.product-detail-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.product-detail-header > div:first-child {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.product-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.product-store {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.product-detail-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.product-price-large {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.product-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.product-section dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+}
+
+.product-section dt {
+  font-weight: 600;
+  color: #666;
+}
+
+.product-section dd {
+  color: #333;
+}
+
+.product-section dd a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.product-section dd a:hover {
+  text-decoration: underline;
+}
+
+.description-text {
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.product-image-main {
+  margin-bottom: 1rem;
+}
+
+.product-image-large {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.product-image-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-image-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.no-images-message {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.error-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.error-message {
+  padding: 1rem;
+  background-color: #fee;
+  color: #c33;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.section-hint {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* Product Summary Styles */
+.product-summary {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+}
+
+.product-summary-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.product-summary-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.product-summary-date {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.source-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+.edit-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 0.5rem;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Images Manager Styles */
+.images-manager-current,
+.images-manager-suggestions {
+  margin-bottom: 2rem;
+}
+
+.images-manager-current h3,
+.images-manager-suggestions h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.current-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image-tile {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.image-tile.readonly {
+  opacity: 0.8;
+}
+
+.image-tile-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(231, 76, 60, 0.9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.image-delete-btn:hover {
+  background: rgba(192, 57, 43, 1);
+}
+
+.image-readonly-label {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.suggestions-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.suggestions-controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.suggestions-controls input[type="number"] {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.suggestion-tile {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.suggestion-tile:hover {
+  border-color: #3498db;
+  transform: scale(1.02);
+}
+
+.suggestion-tile.selected {
+  border-color: #27ae60;
+  border-width: 3px;
+}
+
+.suggestion-tile input[type="checkbox"] {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.suggestion-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.suggestions-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.apply-result {
+  color: #27ae60;
+  font-weight: 500;
+}
+

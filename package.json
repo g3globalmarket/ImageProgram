@@ -1,0 +1,33 @@
+{
+  "name": "korean-products-mern-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN TypeScript monorepo for Korean product scraping and processing",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "turbo run typecheck",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "import:oliveyoung": "npx tsx scripts/importOliveYoungJson.ts",
+    "import:filled": "cd apps/api && pnpm tsx ../../scripts/importProductsFilledGenerated.ts",
+    "verify:products": "cd apps/api && pnpm tsx ../../scripts/verifyProductsData.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.30",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.17"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
